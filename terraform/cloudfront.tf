@@ -22,16 +22,8 @@ resource "aws_cloudfront_distribution" "website" {
     target_origin_id       = "s3-${var.domain_name}"
     viewer_protocol_policy = "redirect-to-https"
 
-    forwarded_values {
-      query_string = false
-      cookies {
-        forward = "none"
-      }
-    }
-
-    min_ttl     = 0
-    default_ttl = 3600
-    max_ttl     = 86400
+    # AWS managed CachingOptimized policy — replaces legacy forwarded_values
+    cache_policy_id = "658327ea-f89d-4fab-a63d-7e88639e58f6"
   }
 
   # PriceClass_100 = US, Canada, Europe — cheapest tier
