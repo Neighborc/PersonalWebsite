@@ -3,18 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-  </style>
+  <title>Chris Neighbor — Software Development Engineer</title>
+  <meta name="description" content="Software Development Engineer at AWS with a background in full stack development, media streaming, and data science." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <p>Portfolio under construction.</p>
+
+  <nav>
+    <span class="nav-name">Chris Neighbor</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <p class="hero-label">Software Development Engineer</p>
+    <h1 class="hero-name">Chris Neighbor</h1>
+    <p class="hero-title">Full Stack Engineer · AWS MediaLive · Data Science</p>
+    <p class="hero-desc">
+      Building live video processing infrastructure at AWS. Previously researching
+      ADHD and genomics. M.S. in Electrical &amp; Computer Engineering.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-heading">About</h2>
+    <div class="section-rule"></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Software Development Engineer at AWS on the MediaLive team, where I've
+          spent the past four years building and scaling live video processing pipelines
+          used by broadcasters worldwide.
+        </p>
+        <p>
+          Before AWS I worked in academic research, applying data science and bioinformatics
+          to ADHD and genomics studies. That background in data-heavy systems shapes how
+          I approach engineering problems today.
+        </p>
+        <p>
+          I work across the full stack — from distributed backend services to frontend
+          tooling — and have a particular interest in AWS infrastructure, observability,
+          and building systems that are reliable under pressure.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="detail-card">
+          <div class="label">Current Role</div>
+          <div class="value">SDE · AWS MediaLive</div>
+        </div>
+        <div class="detail-card">
+          <div class="label">Experience</div>
+          <div class="value">4 years at AWS</div>
+        </div>
+        <div class="detail-card">
+          <div class="label">Education</div>
+          <div class="value">M.S. Electrical &amp; Computer Engineering</div>
+        </div>
+        <div class="detail-card">
+          <div class="label">Previous Work</div>
+          <div class="value">ADHD Research · Genomics · Data Science</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-heading">Skills</h2>
+    <div class="section-rule"></div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>AWS</h3>
+        <div class="skill-tags">
+          <span class="tag">MediaLive</span>
+          <span class="tag">CloudFront</span>
+          <span class="tag">S3</span>
+          <span class="tag">Lambda</span>
+          <span class="tag">ECS</span>
+          <span class="tag">Route 53</span>
+          <span class="tag">IAM</span>
+          <span class="tag">CloudWatch</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Distributed Systems</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">HTML / CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Infrastructure</h3>
+        <div class="skill-tags">
+          <span class="tag">Terraform</span>
+          <span class="tag">CDK</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data Science</h3>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Bioinformatics</span>
+          <span class="tag">Genomics</span>
+          <span class="tag">Statistical Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <div class="section-rule"></div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          This site — static hosting on S3 + CloudFront, infrastructure managed
+          with Terraform, deployed via GitHub Actions CI/CD pipeline.
+        </p>
+        <div class="skill-tags">
+          <span class="tag">AWS</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">GitHub Actions</span>
+        </div>
+        <a href="https://github.com/Neighborc/PersonalWebsite" class="project-link" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>More coming soon</h3>
+        <p>
+          Additional projects will be added here. Check back or follow on GitHub.
+        </p>
+        <div class="skill-tags">
+          <span class="tag">Coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-heading">Contact</h2>
+    <div class="section-rule"></div>
+    <div class="contact-inner">
+      <p>
+        Interested in working together or just want to say hello?
+        Feel free to reach out via email or connect on LinkedIn and GitHub.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:chrisjneighbor@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://github.com/Neighborc" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with HTML, CSS · Hosted on AWS S3 + CloudFront · IaC with Terraform</p>
+  </footer>
+
 </body>
 </html>
