@@ -292,6 +292,7 @@ section {
 
 /* Featured project (thesis) */
 .project-featured {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1.15fr;
   gap: 0;
@@ -300,6 +301,7 @@ section {
   border-radius: var(--radius);
   overflow: hidden;
   transition: border-color 0.15s;
+  cursor: pointer;
 }
 .project-featured:hover { border-color: var(--accent); }
 
@@ -336,6 +338,7 @@ section {
 }
 
 .project-card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -343,6 +346,7 @@ section {
   transition: border-color 0.15s;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .project-card:hover { border-color: var(--accent); }
 
@@ -389,6 +393,31 @@ section {
   gap: 0.3rem;
   margin-top: 0.5rem;
 }
+
+/* Row of links on the featured card */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Whole-card clickable: stretch the primary link across the card */
+.project-card .project-link::after,
+.project-featured .project-links .project-link:first-child::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Secondary link sits above the stretch overlay so it stays independently clickable */
+.project-link--secondary {
+  position: relative;
+  z-index: 2;
+  color: var(--text-muted);
+}
+.project-link--secondary:hover { color: var(--accent-label); }
 
 /* ── Contact ── */
 .contact-inner {
