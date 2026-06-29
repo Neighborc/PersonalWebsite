@@ -156,48 +156,146 @@
   <section id="projects">
     <p class="section-eyebrow">Work</p>
     <h2 class="section-heading">Projects</h2>
+
+    <!-- Featured: Master's Thesis -->
+    <article class="project-featured">
+      <div class="project-featured-media">
+        <img src="assets/images/DengueVirus.jpg" alt="Virus genome visualization from thesis research" loading="lazy" />
+      </div>
+      <div class="project-featured-body">
+        <p class="project-year">Master's Thesis · 2020</p>
+        <h3>Minimum Complexity Echo State Networks for Genome &amp; Sequence Analysis</h3>
+        <p>
+          Echo state networks — recurrent neural networks with a fixed reservoir and a
+          trainable linear readout — explored with an eye toward feasibility of DNA-based
+          implementation. The work investigates network size and sparsity to find
+          minimum-complexity architectures that still outperform linear baselines.
+        </p>
+        <div class="skill-tags">
+          <span class="tag">Echo State Networks</span>
+          <span class="tag">Recurrent Neural Networks</span>
+          <span class="tag">Genomics</span>
+        </div>
+        <a href="assets/pdf/Chris_MastersThesisSlides_FinalVersion.pdf" class="project-link" target="_blank" rel="noopener">
+          View Defense Slides →
+        </a>
+      </div>
+    </article>
+
+    <p class="projects-subhead">Graduate &amp; Research Work</p>
     <div class="projects-grid">
 
       <div class="project-card">
-        <h3>Master's Thesis</h3>
-        <p>
-          Graduate research in signal processing and machine learning.
-          Details and writeup coming soon.
-        </p>
-        <div class="skill-tags">
-          <span class="tag">Signal Processing</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Research</span>
+        <div class="project-card-media">
+          <img src="assets/images/DNA.jpg" alt="DNA sequence visualization" loading="lazy" />
+        </div>
+        <div class="project-card-body">
+          <p class="project-year">Grad School · 2020</p>
+          <h3>DNA Splice Junction Classification with RNNs</h3>
+          <p>
+            An LSTM classifier for genomic splice junctions, paired with a preprocessing
+            tutorial built for lab members. One-hot encodes DNA sequences and classifies
+            intron/exon boundaries on the UCI splice-junction dataset — 95%+ test accuracy.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">LSTM</span>
+            <span class="tag">Keras</span>
+            <span class="tag">Biopython</span>
+          </div>
+          <a href="assets/notebooks/UCI_splice_tutorial_h.html" class="project-link" target="_blank" rel="noopener">
+            View Tutorial →
+          </a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>
-          This site — static hosting on S3 + CloudFront, infrastructure managed
-          with Terraform, deployed via GitHub Actions CI/CD pipeline.
-        </p>
-        <div class="skill-tags">
-          <span class="tag">AWS</span>
-          <span class="tag">Terraform</span>
-          <span class="tag">GitHub Actions</span>
+        <div class="project-card-media">
+          <img src="assets/images/PtoStarry.png" alt="Neural style transfer result" loading="lazy" />
         </div>
-        <a href="https://github.com/Neighborc/PersonalWebsite" class="project-link" target="_blank" rel="noopener">
-          View on GitHub →
-        </a>
+        <div class="project-card-body">
+          <p class="project-year">Grad School · 2020</p>
+          <h3>Art Style Transfer with CNNs</h3>
+          <p>
+            Neural style transfer applying the aesthetics of metal album artwork to clean
+            brand logos using convolutional neural networks.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">CNN</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+          <a href="assets/pdf/StyleTransfer_FinalPresentation.pdf" class="project-link" target="_blank" rel="noopener">
+            View Presentation →
+          </a>
+        </div>
       </div>
 
       <div class="project-card">
-        <h3>More coming soon</h3>
-        <p>
-          Graduate ML projects and additional work will be added here.
-          Follow on GitHub for updates.
-        </p>
-        <div class="skill-tags">
-          <span class="tag">Coming soon</span>
+        <div class="project-card-media">
+          <img src="assets/images/ObjectDetection.png" alt="Robot object detection" loading="lazy" />
+        </div>
+        <div class="project-card-body">
+          <p class="project-year">Grad School · 2020</p>
+          <h3>Robot Vision and Mapping</h3>
+          <p>
+            A mobile robot that uses a 3D video feed to detect a colored object, locate it
+            in mapped space, orient itself, and grab it with a robotic arm.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">3D Mapping</span>
+          </div>
+          <a href="assets/pdf/RoboticsPresentation.pdf" class="project-link" target="_blank" rel="noopener">
+            View Presentation →
+          </a>
         </div>
       </div>
 
+      <div class="project-card">
+        <div class="project-card-media">
+          <img src="assets/images/lena_best.png" alt="Reconstructed image from sparse approximation" loading="lazy" />
+        </div>
+        <div class="project-card-body">
+          <p class="project-year">Grad School · 2020</p>
+          <h3>Image Reconstruction via Sparse Approximation</h3>
+          <p>
+            Reconstructed greyscale images from binary half-tone inputs using task-specific
+            dictionary learning and sparse reconstruction of image patches, optimizing for PSNR.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">Sparse Coding</span>
+            <span class="tag">Dictionary Learning</span>
+            <span class="tag">Image Processing</span>
+          </div>
+          <a href="assets/pdf/sparse_image_reconstruction_project.pdf" class="project-link" target="_blank" rel="noopener">
+            View Presentation →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="projects-subhead">Current Work</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-card-body">
+          <p class="project-year">2026</p>
+          <h3>This Portfolio Site</h3>
+          <p>
+            Static site on S3 + CloudFront, infrastructure managed with Terraform,
+            deployed via a GitHub Actions CI/CD pipeline using OIDC.
+          </p>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+          <a href="https://github.com/Neighborc/PersonalWebsite" class="project-link" target="_blank" rel="noopener">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 

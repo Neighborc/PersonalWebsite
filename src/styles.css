@@ -267,6 +267,68 @@ section {
 /* ── Projects ── */
 #projects { border-bottom: 1px solid var(--border); }
 
+/* Year / context label */
+.project-year {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: var(--label-spacing);
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-bottom: 0.5rem;
+}
+
+/* Sub-headings within projects */
+.projects-subhead {
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: var(--label-spacing);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 2.5rem 0 1.25rem;
+}
+
+/* Featured project (thesis) */
+.project-featured {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+.project-featured:hover { border-color: var(--accent); }
+
+.project-featured-media {
+  overflow: hidden;
+  min-height: 240px;
+}
+.project-featured-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-featured-body { padding: 2rem; }
+.project-featured-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.project-featured-body p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -277,10 +339,28 @@ section {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  overflow: hidden;
   transition: border-color 0.15s;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover { border-color: var(--accent); }
+
+.project-card-media {
+  height: 160px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+.project-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+.project-card:hover .project-card-media img { transform: scale(1.04); }
+
+.project-card-body { padding: 1.5rem; }
 
 .project-card h3 {
   font-family: var(--font-display);
@@ -341,6 +421,8 @@ footer {
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .about-grid { grid-template-columns: 1fr; }
+  .project-featured { grid-template-columns: 1fr; }
+  .project-featured-media { min-height: 200px; }
   nav { padding: 1rem 1.25rem; }
   .nav-links { gap: 1.25rem; }
 }
