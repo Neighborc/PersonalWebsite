@@ -3,3 +3,6 @@ terraform/.terraform/
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
 terraform/terraform.tfvars
+
+# Old portfolio (reference only, backed up separately)
+old_personal_website_2020/
